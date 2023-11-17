@@ -23,11 +23,11 @@ body{
 /* Add any additional styling as needed */
 .navbar ul li {
     display: inline; /* Display the list items horizontally */
-    margin-right: 20px; /* Add spacing between list items */
+    margin-right: 40px; /* Add spacing between list items */
 }
 
 .navbar a {
     text-decoration: none; /* Remove underlines from the links */
-    color: white; /* Set the text color for the links */
+    color: Dark Blue ; /* Set the text color for the links */
 }
 
