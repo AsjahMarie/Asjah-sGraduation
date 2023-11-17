@@ -15,14 +15,14 @@ body{
 }
 /*moving nav bar to the left side*/
 .container{
-    display: flex;
+    display: inline;
     width: 100%; /* Full width of the page */
     max-width: 1200px; /* Adjust as needed */
     margin: 0 auto; /* Center the content */
 }
 
 .navbar {
-    display: flex;
+    display: inline;
     flex-direction: column;
     position: fixed;
     top: 0;
