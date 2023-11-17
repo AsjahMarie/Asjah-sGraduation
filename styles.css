@@ -35,7 +35,7 @@ body{
 
 p{
     text-decoration: none;
-    font-family: fantasy;
+    font-family:system-ui;
     font-size:18px;
     line-height: 2.0;
     color: black;
