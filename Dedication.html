@@ -13,10 +13,6 @@
             width: 100vw;
             height: 100vh;
             object-fit: cover; /* Covers the entire viewport */
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: -1; /* Places the video behind other elements */
         }
 
         .navbar {
@@ -28,13 +24,11 @@
             margin-top: 50px;
             padding: 20px;
             color: yellowgreen;
-            z-index: 2;
+            margin-bottom: 50px; /* Add margin to prevent overlap with the video */
         }
     </style>
 </head>
 <body class="transparent-bg">
-    <video src="Cailan.mp4" autoplay muted loop></video>
-
     <nav class="navbar">     
        <ul>
             <li><a href="index.html">Home</a></li>
@@ -60,6 +54,8 @@
                 forever carry a piece of you with me everywhere i go. I love you and i cant wait until the day ill get to see you again soon.
             </p>
         </section>
+
+        <video src="Cailan.mp4" autoplay muted loop></video>
     </main>
 </body>
 </html>
