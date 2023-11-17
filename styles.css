@@ -15,14 +15,14 @@ body{
     margin-top: auto;
     background-attachment: fixed;
 }
-.background-image {
+.transparent_bg {
     background-color: rgba(255, 255, 255, 0.5); /* Adjust the last value (0.5) for the desired opacity (0 is fully transparent, 1 is fully opaque) */
 }
 /* Add this style to remove bullet points from the navbar */
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    paddding:0;
+    padding: 0;
 }
 
 /* Add any additional styling as needed */
