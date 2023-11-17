@@ -15,7 +15,7 @@ body{
     margin-top: auto;
     background-attachment: fixed;
 }
-.transparent-bg {
+.background-image {
     background-color: rgba(255, 255, 255, 0.5); /* Adjust the last value (0.5) for the desired opacity (0 is fully transparent, 1 is fully opaque) */
 }
 /* Add this style to remove bullet points from the navbar */
