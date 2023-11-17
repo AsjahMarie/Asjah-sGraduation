@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: system- ui;
     font-size:18px;
     line-height:2.0;
