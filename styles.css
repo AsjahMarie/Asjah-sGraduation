@@ -15,25 +15,5 @@ body{
     margin-top: auto;
     background-attachment: fixed;
 }
-.transparent_bg {
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust the last value (0.5) for the desired opacity (0 is fully transparent, 1 is fully opaque) */
-}
-/* Add this style to remove bullet points from the navbar */
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* Add any additional styling as needed */
-.navbar ul li {
-    display: inline-block; /* Display the list items horizontally */
-    margin-right: 40px; /* Add spacing between list items */
-}
-
-.navbar a {
-    text-decoration: none; /* Remove underlines from the links */
-    color: Dark Blue ; /* Set the text color for the links */
-}
 
 
