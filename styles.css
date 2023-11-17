@@ -1,2 +1,33 @@
+body{
+    text-align: center;
+    text-decoration: none;
+    font-family: system- ui;
+    font-size:18px;
+    line-height:2.0;
+    background-color: aliceblue;
+    color:black;
+}
 
+.h1,h2{
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: auto;
+    background-attachment: fixed;
+}
+/* Remove bullet points and make navbar items horizontal */
+.navbar ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding on the ul */
+}
+
+.navbar ul li {
+    display: inline-block; /* Display the list items horizontally */
+    margin-right: 20px; /* Add spacing between list items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
 
