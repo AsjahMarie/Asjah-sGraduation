@@ -3,9 +3,34 @@
 <head>
     <title>Cailan</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body{
+            margin: 0; /*Removes default margin*/
+            overflow: hidden; /*hides scroll bars*/
+        }
+
+        video{
+            width:100vw;
+            height: 100vh;
+            object-fit: cover; /*covers the entire viewport*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; /*places the video behind other elements*/
+        }
+        .navbar{
+            position: relative;
+            z-index: -1;
+        }
+        .dedication-section{
+            margin-top: 50px;
+            padding: 20px;
+            color: yellowgreen;
+            z-index:2;
+        }
+    </style>
 </head>
 <body class="transparent-bg">
-    <section id="#main">
         <video src="Cailan.mp4" muted autoplay loop></video>
     </section>
     <nav class="navbar">     
@@ -20,7 +45,7 @@
 
     <main>
         <section class="dedication-section">
-            <h1>Dedication to Cailan</h1>
+            <h1>Cailan</h1>
             <p> CAILAN! we finally made it love. I wish you were here to join me and I know you'd be proud. Anytime that
                 i doubted myself whether it came to my school work, my hair , my body image..You lifted me up. I love how any time
                 i came home to visit, we were always trying to get into something together..whether it was doing each others hair
