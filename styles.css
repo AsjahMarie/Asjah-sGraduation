@@ -11,40 +11,9 @@ body{
     padding: 20px;
     margin-top: auto;
     background-attachment: fixed;
-
-}
-/*moving nav bar to the left side*/
-.container{
-    display: inline;
-    width: 100%; /* Full width of the page */
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center the content */
 }
 
-.navbar {
-    display: inline;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin-top: 68px;
-    height: 93%; /* Full height of the screen */
-    width: 115px; /* Adjust the width based on your design */
-    background: #98c1d9; /* Example background color */
-    /* we can add other styling as needed */
+li{
+    display:inline;
+}
 
-}
-.navbar a{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: #293241;
-    text-decoration: none;
-}
-.navbar a:active{
-    background-color: #f3fdfe;
-}
-.navbar a:hover{
-    transform: scale(1.1,1.1);
