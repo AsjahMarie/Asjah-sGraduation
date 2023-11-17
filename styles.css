@@ -30,4 +30,8 @@ body{
     text-decoration: none;
     color: blue;
 }
+a {
+    text-decoration: none; /* Remove underlines from all anchor elements */
+}
+
 
