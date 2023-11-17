@@ -31,7 +31,7 @@ body{
     color: blue;
 }
 a {
-    text-decoration: none; /* Remove underlines from all anchor elements */
+    text-decoration: none !important; /* Remove underlines from all anchor elements */
 }
 
 
