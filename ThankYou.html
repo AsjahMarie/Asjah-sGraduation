@@ -4,15 +4,15 @@
         <title>AsjahsGraduation</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <style>
-        /* Add styling for the slideshow container and images */
-        .slideshow-container {
+        .carousel-container {
             max-width: 1000px;
-            position: relative;
             margin: auto;
+            overflow: hidden;
         }
 
-        .mySlides {
+        .carousel-slide {
             display: none;
+            width: 100%;
         }
 
         img {
@@ -21,7 +21,6 @@
     </style>
     </head>
     <body>
-        
         <header>
             <h1> Celebrating Asjah's Graduation</h1>
         </header>
@@ -43,52 +42,35 @@
                     I love you guys with all of my heart and couldnt of done it without you whether you "made a impact" or not.Just being there was more than enough.
                     -Thank you.</p
                                      <!-- Slideshow container -->
-            <div class="slideshow-container">
+            <div class="carousel-container">
                 <!-- Slides -->
-                <div class="mySlides">
+                <div class="carousel-slide">
                     <img src="69644739084--17D0BF3E-E22D-451F-97D3-48D520F37A0D.png" alt="Bestie">
                 </div>
 
                 <div class="mySlides">
                     <img src="Cailan_Asjah.jpg" alt="Cailan and me">
                 </div>
-                <div class="mySlides">
+                <div class="carousel-slide">
                     <img src="Granny_Cailan_Asjah.jpg" alt="The Gang">
                 </div>
-                <div class="mySlides">
+                <div class="carousel-slide">
                     <img src="IMG-2693.jpg" alt="">
                 </div>
-                <div class="mySlides">
+                <div class="carousel-slide">
                     <img src="Mommy_Asjah.jpg" alt="Mommy">
                 </div>
-                <div class="mySlides">
+                <div class="carousel-slide">
                     <img src="IMG-3318.jpg" alt="">
                 </div>
-                <div class="mySlides">
+                <div class="carousel-slide">
                     <img src="Asjah_Nick.jpg" alt="">
                 </div>
-                <div class="mySlides">
+                <div class="carousel-slide">
                     <img src="Asjah.jpg" alt="">
                 </div>
 
                 <!-- Add more slides as needed -->
-
-                <!-- Navigation dots -->
-                <div style="text-align: center; margin-top: 20px;">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <!-- Add more dots for additional slides -->
-                </div>
             </div>
 
         </section>
@@ -103,7 +85,7 @@
 
         function showSlides() {
             var i;
-            var slides = document.getElementsByClassName("mySlides");
+            var slides = document.getElementsByClassName("carousel-slide");
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
