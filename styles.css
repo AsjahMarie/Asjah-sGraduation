@@ -18,16 +18,26 @@ body{
 /* Add this style to remove bullet points from the navbar */
 .navbar ul {
     list-style-type: none;
+    margin: 0;
+    paddding:0;
 }
 
 /* Add any additional styling as needed */
 .navbar ul li {
-    display: inline; /* Display the list items horizontally */
+    display: inline-block; /* Display the list items horizontally */
     margin-right: 40px; /* Add spacing between list items */
 }
 
 .navbar a {
     text-decoration: none; /* Remove underlines from the links */
     color: Dark Blue ; /* Set the text color for the links */
+}
+
+p{
+    text-decoration: none;
+    font-family: fantasy;
+    font-size:18px;
+    line-height: 2.0;
+    color: black;
 }
 
