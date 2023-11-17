@@ -1,8 +1,11 @@
 body{
     text-align: center;
     text-decoration: none;
-    font-family: cursive;
+    font-family: system- ui;
+    font-size:18px;
+    line-height:2.0;
     background-color: aliceblue;
+    color:black
 }
 
 .h1,h2{
@@ -33,11 +36,4 @@ body{
     color: Dark Blue ; /* Set the text color for the links */
 }
 
-p{
-    text-decoration: none;
-    font-family:system-ui;
-    font-size:18px;
-    line-height: 2.0;
-    color: black;
-}
 
