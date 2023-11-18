@@ -5,8 +5,10 @@ const perView = 3
 let totalScroll = 0
 const delay = 2000
 
+document.documentElement.style.setProperty('--per-view', perView);
+
 imageWrapper.style.setProperty('--per-view', perView)
-for(let i = 0; i < perView; i++) {
+for (let i = 0; i < perView; i++) {
   imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
 }
 
@@ -14,7 +16,7 @@ let autoScroll = setInterval(scrolling, delay)
 
 function scrolling() {
   totalScroll++
-  if(totalScroll == imageLength + 1) {
+  if (totalScroll == imageLength + 1) {
     clearInterval(autoScroll)
     totalScroll = 1
     imageWrapper.style.transition = '0s'
