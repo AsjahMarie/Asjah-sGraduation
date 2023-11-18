@@ -90,6 +90,7 @@ body.thanks{
   height: 100%;
   display: flex;
   width: max-content;
+  transition: 1s;
 }
 
 .list img{
