@@ -19,3 +19,7 @@ function reloadSlider(){
   let checkLeft = items[active].offsetLeft;
   list.style.left = -checkLeft + 'px';
 }
+
+let lastActiveDot = document.querySelector(.slider .dots li.active);
+lastActiveDot.classList.remove('active');
+dots[active].classList.add('active');
