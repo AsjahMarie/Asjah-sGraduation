@@ -43,6 +43,7 @@ body a {
 .image-container {
   overflow-x: hidden;
   max-width: 768px;
+  margin: 0 auto;
 }
 
 .image-wrapper {
@@ -53,6 +54,7 @@ body a {
   position: relative;
   left: 0;
   transition: 0.3s;
+  justify-content: center;
 }
 
 .image-wrapper > * {
