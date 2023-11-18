@@ -1,31 +1,21 @@
-const imageWrapper = document.querySelector('.image-wrapper');
-const imageItems = document.querySelectorAll('.image-wrapper > *');
-const imageLength = imageItems.length;
-const perView = 3;
-let totalScroll = 0;
-const delay = 2000;
+let list = document.querySelector('.slider .list');
+let items = document.querySelectorAll('.slider .list .item');
+let dots = document.querySelectorAll('.slider .dots li');
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
 
-document.documentElement.style.setProperty('--per-view', perView);
+let active = 0;
+let lengthItems = items.length - 1;
 
-const widthEl=document.queryselector('image-wrapper > :first-child').offsetWidth + 24;
-imageWrapper.style.width = `${widthEl * imageLength}px`;
-
-imageWrapper.style.setProperty('--per-view', perView)
-for (let i = 0; i < perView; i++) {
-  imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+next.onclick = function(){
+  if(active + 1 > lengthItems){
+    active = 0;
+  }else{
+    active =  active + 1;
 }
+  reloadSlider();
 
-let autoScroll = setInterval(scrolling, delay);
-
-function scrolling() {
-  totalScroll++;
-  if (totalScroll == imageLength + 1) {
-    clearInterval(autoScroll);
-    totalScroll = 1;
-    imageWrapper.style.transition = '0s';
-    imageWrapper.style.left = '0';
-    autoScroll = setInterval(scrolling, delay);
-  }
-  imageWrapper.style.left = `-${totalScroll * widthEl}px`
-  imageWrapper.style.transition = '.3s'
-});
+function reloadSlider(){
+  let checkLeft = items[active].offsetLeft;
+  list.style.left = -checkLeft + 'px';
+}
