@@ -1,32 +1,29 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const imageWrapper = document.querySelector('.image-wrapper');
-  const imageItems = document.querySelectorAll('.image-wrapper > *');
-  const imageLength = imageItems.length;
-  const perView = 3;
-  let totalScroll = 0;
-  const delay = 2000;
+const imageWrapper = document.querySelector('.image-wrapper')
+const imageItems = document.querySelectorAll('.image-wrapper > *')
+const imageLength = imageItems.length
+const perView = 3
+let totalScroll = 0
+const delay = 2000
 
-  // Set the total width of the image container
-  const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24;
-  imageWrapper.style.width = `${widthEl * imageLength}px`;
+document.documentElement.style.setProperty('--per-view', perView);
 
-  // Clone the images for seamless scrolling
-  for (let i = 0; i < perView; i++) {
-    imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML);
+imageWrapper.style.setProperty('--per-view', perView)
+for (let i = 0; i < perView; i++) {
+  imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+}
+
+let autoScroll = setInterval(scrolling, delay)
+
+function scrolling() {
+  totalScroll++
+  if (totalScroll == imageLength + 1) {
+    clearInterval(autoScroll)
+    totalScroll = 1
+    imageWrapper.style.transition = '0s'
+    imageWrapper.style.left = '0'
+    autoScroll = setInterval(scrolling, delay)
   }
-
-  let autoScroll = setInterval(scrolling, delay);
-
-  function scrolling() {
-    totalScroll++;
-    if (totalScroll == imageLength + 1) {
-      clearInterval(autoScroll);
-      totalScroll = 1;
-      imageWrapper.style.transition = '0s';
-      imageWrapper.style.left = '0';
-      autoScroll = setInterval(scrolling, delay);
-    }
-    imageWrapper.style.left = `-${totalScroll * widthEl}px`;
-    imageWrapper.style.transition = '.3s';
-  }
-});
+  const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
+  imageWrapper.style.left = `-${totalScroll * widthEl}px`
+  imageWrapper.style.transition = '.3s'
+}
