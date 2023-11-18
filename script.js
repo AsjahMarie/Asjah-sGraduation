@@ -1,25 +1,17 @@
-let list = document.querySelector('.slider .list');
-let items = document.querySelectorAll('.slider .list .item');
-let dots = document.querySelectorAll('.slider .dots li');
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
+var slideIndex = 1;
+showDivs(slideIndex);
 
-let active = 0;
-let lengthItems = items.length - 1;
-
-next.onclick = function(){
-  if(active + 1 > lengthItems){
-    active = 0;
-  }else{
-    active =  active + 1;
-}
-  reloadSlider();
-
-function reloadSlider(){
-  let checkLeft = items[active].offsetLeft;
-  list.style.left = -checkLeft + 'px';
+function plusDivs(n) {
+  showDivs(slideIndex += n);
 }
 
-let lastActiveDot = document.querySelector(.slider .dots li.active);
-lastActiveDot.classList.remove('active');
-dots[active].classList.add('active');
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
