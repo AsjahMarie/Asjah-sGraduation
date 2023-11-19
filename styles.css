@@ -38,9 +38,3 @@ body a {
   text-decoration: none !important; /* Remove underlines from all anchor elements */
   color:black;
 }
-.background {
-  background-image: url('images/confetti.gif');
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-}
