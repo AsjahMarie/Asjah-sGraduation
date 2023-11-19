@@ -38,69 +38,9 @@ body a {
   text-decoration: none !important; /* Remove underlines from all anchor elements */
   color:black;
 }
-
-/* Basic styling for the slideshow container */
-.thanks {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-/* Styles for the slideshow container */
-.slider {
-    position: relative;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-/* Styles for the slideshow items */
-.list {
-    display: flex;
-    overflow: hidden;
-}
-
-.item {
-    flex: 0 0 100%;
-    display: none;
-}
-
-/* Navigation buttons styling */
-.buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.buttons button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-/* Dots styling */
-.dots {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.dots li {
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.dots li.active {
-    background-color: #4CAF50;
+.background {
+  background-image: url('images/confetti.gif');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
 }
