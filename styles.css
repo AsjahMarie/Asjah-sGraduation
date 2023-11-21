@@ -22,6 +22,7 @@ h2 {
 .navbar ul {
   list-style-type: none;
   padding: 0; /* Remove default padding on the ul */
+  z-index:2;
 }
 
 .navbar ul li {
