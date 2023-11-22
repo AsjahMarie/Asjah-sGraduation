@@ -39,9 +39,3 @@ body a {
   text-decoration: none !important; /* Remove underlines from all anchor elements */
   color:white;
 }
-/* Styles for the slideshow */
-.slideshow-container {
-   max-width: 1000px;
-   position: relative;
-   margin: auto;
-    }
