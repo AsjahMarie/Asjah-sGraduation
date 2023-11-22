@@ -39,3 +39,8 @@ body a {
   text-decoration: none !important; /* Remove underlines from all anchor elements */
   color:white;
 }
+.container{
+  width: 75%;
+  height: 100vh;
+  background: white;
+}
