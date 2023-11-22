@@ -40,8 +40,9 @@ body a {
   color:white;
 }
 .container{
-  width: 75%;
-  height: 100vh;
-  background: white;
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 25px;
 }
