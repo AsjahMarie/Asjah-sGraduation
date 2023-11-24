@@ -5,7 +5,7 @@ body {
   font-size: 18px;
   line-height: 2.0;
   background-color: aliceblue;
-  color:darkorchid;
+  color:rgb(128,0,32);
 }
 
 .h1,
@@ -15,7 +15,7 @@ h2 {
   padding: 20px;
   margin-top: auto;
   background-attachment: fixed;
-  color:darkorchid;
+  color:rgb(128,0,32);
 }
 
 /* Remove bullet points and make navbar items horizontal */
@@ -37,7 +37,7 @@ h2 {
 
 body a {
   text-decoration: none !important; /* Remove underlines from all anchor elements */
-  color:darkorchid;
+  color:rgb(128,0,32);
 }
 .container{
   display: block;
