@@ -5,7 +5,6 @@ body {
   font-size: 18px;
   line-height: 2.0;
   background-color: aliceblue;
-  color:light blue;
   font-weight:bold;
 }
 
@@ -17,7 +16,6 @@ h2 {
   margin-top: auto;
   background-attachment: fixed;
   color:white;
-  font-weight:bold;
 }
 
 /* Remove bullet points and make navbar items horizontal */
