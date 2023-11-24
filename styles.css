@@ -6,6 +6,7 @@ body {
   line-height: 2.0;
   background-color: aliceblue;
   color:rgb(128,0,32);
+  list-style-type: none;
 }
 
 .h1,
@@ -38,6 +39,7 @@ h2 {
 body a {
   text-decoration: none !important; /* Remove underlines from all anchor elements */
   color:rgb(128,0,32);
+  list-style-type: none;
 }
 .container{
   display: block;
