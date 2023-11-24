@@ -5,6 +5,7 @@ body {
   font-size: 18px;
   line-height: 2.0;
   background-color: aliceblue;
+  color:white;
 }
 
 .h1,
@@ -31,8 +32,7 @@ h2 {
 
 .navbar a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: gold;
 }
 
 body a {
