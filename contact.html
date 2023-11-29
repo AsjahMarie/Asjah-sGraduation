@@ -96,39 +96,5 @@
     </section>
     <p>&copy; Asjah Marie Fall 2023</p>
 </main>
- <script>
-  var form = document.querySelector("form");
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-    var status = document.getElementById("my-form-status");
-    var data = new FormData(event.target);
-
-    try {
-      // Assuming your existing Formspree submission code returns a promise
-      await submitFormToFormspree(data);
-
-      // Redirect to the home page after successful submission
-      window.location.href = "index.html";
-    } catch (error) {
-      // Handle form submission error here
-      console.error("Form submission error:", error);
-      status.innerHTML = "Oops! There was a problem submitting your form";
-    }
-  }
-
-  async function submitFormToFormspree(formData) {
-    // Since you don't have specific Formspree code, you can simulate a delay
-    // to simulate asynchronous behavior (you can remove this in your actual code)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    // Simulate a successful response
-    // In your actual code, you may want to make an actual request to Formspree
-    // or remove this part if you rely on the default form submission behavior
-    return Promise.resolve();
-  }
-
-  form.addEventListener("submit", handleSubmit);
-</script>
 </body>
 </html>
